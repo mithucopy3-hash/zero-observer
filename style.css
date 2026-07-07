@@ -17,7 +17,27 @@ body{
     color:#fff;
     font-family:Georgia, "Times New Roman", serif;
 }
+.hero{
+    position:relative;
+    overflow:hidden;
+}
 
+.hero::before{
+    content:"";
+    position:absolute;
+    width:700px;
+    height:700px;
+    background:radial-gradient(circle, rgba(255,255,255,.08), transparent 70%);
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+}
+
+.hero>*{
+    position:relative;
+    z-index:1;
+}
 .hero{
     min-height:100vh;
     display:flex;
@@ -29,7 +49,7 @@ body{
 }
 
 h1{
-    font-size:clamp(3rem,8vw,6rem);
+   font-size:clamp(4rem,10vw,8rem);
     letter-spacing:10px;
     margin-bottom:25px;
     font-weight:400;
@@ -40,6 +60,8 @@ h1{
     color:#d6d6d6;
     line-height:1.8;
     margin-bottom:25px;
+   max-width:700px;
+font-style:italic;
 }
 
 .scroll-indicator{
