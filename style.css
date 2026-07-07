@@ -1,1 +1,63 @@
+/* ==========================
+   ZERO OBSERVER v1.0
+========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:Georgia, "Times New Roman", serif;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+}
+
+h1{
+    font-size:clamp(3rem,8vw,6rem);
+    letter-spacing:10px;
+    margin-bottom:25px;
+    font-weight:400;
+}
+
+.quote{
+    font-size:clamp(1.2rem,2vw,1.7rem);
+    color:#d6d6d6;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.bangla{
+    font-size:1.1rem;
+    color:#9d9d9d;
+    line-height:1.8;
+    margin-bottom:50px;
+}
+
+.scroll-btn{
+    color:#fff;
+    text-decoration:none;
+    border:1px solid #fff;
+    padding:14px 34px;
+    transition:.35s;
+}
+
+.scroll-btn:hover{
+    background:#fff;
+    color:#000;
+}
