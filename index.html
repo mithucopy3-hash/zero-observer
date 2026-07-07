@@ -1,48 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zero Observer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero Observer</title>
 
-    <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-<nav class="navbar">
-    <div class="logo">ZERO OBSERVER</div>
+<body class="bg-black text-white selection:bg-white selection:text-black">
 
-    <div class="menu">
-        <a href="#">Home</a>
-        <a href="#philosophy">Philosophy</a>
-        <a href="#">Essays</a>
-        <a href="#">Thoughts</a>
-        <a href="#">About</a>
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-md border-b border-white/10 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-5">
+
+        <h1 class="tracking-[8px] text-lg">
+            ZERO OBSERVER
+        </h1>
+
+        <div class="hidden md:flex gap-8 text-sm text-gray-400">
+            <a href="#philosophy" class="hover:text-white">Philosophy</a>
+            <a href="#essays" class="hover:text-white">Essays</a>
+            <a href="#thoughts" class="hover:text-white">Thoughts</a>
+            <a href="#about" class="hover:text-white">About</a>
+        </div>
+
     </div>
 </nav>
-    <main class="hero">
 
-        <h1>ZERO OBSERVER</h1>
+<!-- Hero -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
 
-        <p class="quote">
-            When the ego becomes zero,<br>
-            observation begins.
-        
+    <h1 class="text-6xl md:text-8xl tracking-[15px] font-light">
+        ZERO OBSERVER
+    </h1>
 
-<a href="#philosophy" class="scroll-indicator">
-    <span class="circle">○</span>
-    <span class="arrow">↓</span>
-</a>
-    </main>
-    <section id="philosophy" class="section">
-    <h2>Philosophy</h2>
-    <p>
-        Zero Observer is a space for reflection, not persuasion.
-        Here, every idea begins with observation before judgment.
+    <p class="mt-8 text-gray-400 italic text-xl leading-9 max-w-xl">
+        When the ego becomes zero,<br>
+        observation begins.
     </p>
+
+    <a href="#philosophy" class="mt-24 text-4xl animate-bounce no-underline">
+        ○<br>↓
+    </a>
+
 </section>
 
-    <script src="script.js"></script>
+<!-- Philosophy -->
+
+<section id="philosophy" class="py-32 px-8 max-w-5xl mx-auto">
+
+<h2 class="text-5xl mb-12">
+Philosophy
+</h2>
+
+<p class="text-gray-400 leading-9 text-lg">
+
+Zero Observer is not a religion.
+
+It is not a political ideology.
+
+It is not a movement.
+
+It is a place where observation comes before judgment,
+and questions come before conclusions.
+
+</p>
+
+</section>
+
+<!-- Essays -->
+
+<section id="essays" class="py-32 px-8 max-w-5xl mx-auto">
+
+<h2 class="text-5xl mb-12">
+Featured Essays
+</h2>
+
+<div class="border border-white/10 rounded-2xl p-8">
+
+<h3 class="text-2xl mb-4">
+Coming Soon
+</h3>
+
+<p class="text-gray-500">
+
+Your philosophical essays will appear here.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Thoughts -->
+
+<section id="thoughts" class="py-32 px-8 max-w-5xl mx-auto">
+
+<h2 class="text-5xl mb-12">
+Latest Thoughts
+</h2>
+
+<div class="border border-white/10 rounded-2xl p-8">
+
+<p class="italic text-gray-400">
+
+"Every belief deserves observation before acceptance."
+
+</p>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about" class="py-32 px-8 max-w-5xl mx-auto">
+
+<h2 class="text-5xl mb-12">
+About
+</h2>
+
+<p class="text-gray-400 leading-9">
+
+Zero Observer is a long-term philosophical archive exploring
+human nature, consciousness, silence, observation and truth.
+
+</p>
+
+</section>
+
+<footer class="border-t border-white/10 py-12 text-center text-gray-500">
+
+© 2026 Zero Observer
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
