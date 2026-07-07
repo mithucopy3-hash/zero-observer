@@ -42,15 +42,32 @@ h1{
     margin-bottom:25px;
 }
 
-.scroll-btn{
+.scroll-indicator{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2px;
     color:#fff;
     text-decoration:none;
-    border:1px solid #fff;
-    padding:14px 34px;
-    transition:.35s;
+    margin-top:50px;
 }
 
-.scroll-btn:hover{
-    background:#fff;
-    color:#000;
+.circle{
+    font-size:28px;
+    animation:pulse 2s infinite;
+}
+
+.arrow{
+    font-size:20px;
+    animation:down 2s infinite;
+}
+
+@keyframes pulse{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+}
+
+@keyframes down{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(8px);}
 }
